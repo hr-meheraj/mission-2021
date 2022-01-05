@@ -6,6 +6,11 @@
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 }
+body{
+	background: linear-gradient(
+106deg, rgb(0 4 9) 0%, rgb(35 3 120) 100%);
+    color: white;
+}
 html{
 	scroll-behavior: smooth;
 }
@@ -52,7 +57,7 @@ nav .nav-links a{
 }
 .header-main{
 	display: flex;
-	width: 80%;
+	width: 90%;
 	justify-content: space-between;
 	align-items: center;
 	margin: 100px auto;
@@ -74,6 +79,10 @@ nav .nav-links a{
 }
 .right-side{
 	width:50%;
+}
+.right-side img{
+	box-shadow: 1px 1px 2px #0f0404, inset 1px 1px 2px #ff9803;
+    border-radius: 50%
 }
 .title{
 	padding-left: 10px;
@@ -117,7 +126,7 @@ nav .nav-links a{
 	justify-content: space-between;
 }
 .mission-elements > div{
-	width: 30%;
+	width: 32%;
 }
 .mission-content-1{
 	background:rgba(9, 156, 241, 0.699);
@@ -131,6 +140,15 @@ nav .nav-links a{
 }
 .mission-content-1 > h2,p{
 	margin-top: 10px;
+}
+.mission-1{
+	   background: linear-gradient(106deg, rgba(5,84,166,1) 0%, rgba(9,164,150,1) 100%);
+}
+.vission{
+	background: linear-gradient(321deg, rgba(20,115,215,1) 0%, rgba(20,226,207,1) 100%);
+}
+.goals{
+
 }
 
 /* inner section */
@@ -169,4 +187,35 @@ footer h2{
 }
 footer p{
 	color: gray;
+}
+
+.app{
+	width: 80%;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.app .app-img{
+	width: 45%;
+}
+.app .app-content{
+	width: 45%;
+	padding-top: 40px;
+}
+.app-title{
+	text-align: center;
+	margin:70px 0px;
+	font-weight: 700;
+}
+.app-title span{
+	color:orange;
+}
+.app-btn{
+	padding: 10px 15px;
+	background:linear-gradient(132deg,rgb(2, 198, 212),rgb(0, 0, 236));
+	color:white;
+	border-radius: 10px;
+	display: inline-block;
+	margin-top: 15px;
 }

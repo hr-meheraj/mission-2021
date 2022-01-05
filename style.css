@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Moon+Dance&family=Poppins:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+html{
+	scroll-behavior: smooth;
+}
+p{
+	font-size: 20px;
+	font-weight: 400 !important;
+}
+h1,h2,h3,h4{
+	font-weight: 700;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-around;
+	background-color: #112233;
+	align-items: center;
+	margin: 0 auto;
+}
+nav .logo {
+	width:50%;
+	padding-left: 10%;
+}
+.logo a{
+	display: block;
+		font-size: 22px;
+		color:white;
+}
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+nav .nav-links a{
+	display:inline-block;
+	padding: 10px 0px;
+	font-size: 20px;
+	color:aqua;
+}
+.header-main{
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px auto;
+}
+.left-side{
+	width:50%;
+	padding: 40px;
+}
+.left-side h1{
+	font-family: 'Lobster', cursive;
+	font-size: 48px
+}
+.left-side h1> span {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 700;
+}
+.left-side > * {
+	padding:5px 0px;
+}
+.right-side{
+	width:50%;
+}
+.title{
+	padding-left: 10px;
+	font-size: 36px;
+	border-left: 4px solid;
+	border-radius:10px;
+	border-image:linear-gradient(70deg, red,blue) 10;
+	border-image-slice: 10;
+
+}
+
+.title span{
+	color:orange;
+}
+
+.red-btn{
+	border-radius: 20px;
+	display: inline-block;
+	padding: 10px 25px;
+	background:red;
+	color:white;
+	margin: 10px 0px;
+}
+
+/* Section two here */
+.mission{
+	width: 80%;
+	margin: 0 auto;
+}
+.mission-title{
+	text-align: center;
+	padding: 50px 0px;
+	font-size: 46px;
+}
+.mission-title span{
+	color:orange;
+}
+.mission-elements{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.mission-elements > div{
+	width: 30%;
+}
+.mission-content-1{
+	background:rgba(9, 156, 241, 0.699);
+	border-radius:10px;
+	padding: 20px 15px;
+	box-shadow: 2px 2px 5px rgba(9, 156, 241, 0.699);
+	margin-top: 40px;
+}
+.mission-content-1 img{
+	width:55%;
+}
+.mission-content-1 > h2,p{
+	margin-top: 10px;
+}
+
+/* inner section */
+.inner-section-1{
+	display: flex;
+	justify-content: space-between;
+	width:80%;
+	margin: 100px auto;
+
+}
+.inner-section-1 .content h1{
+	font-size: 32px;
+}
+.inner-section-1 .content p{
+	font-size: 22px;
+	margin:15px 0px;
+}
+.inner-section-1 .content .red-btn {
+	font-size: 22px;
+}
+.inner-section-1 > div {
+	width: 45%;
+}
+
+
+/* footer area */
+footer{
+	background-color: #112233;
+	padding: 50px;
+	text-align: center;
+	color: white;
+}
+footer h2{
+	font-family: 'Moon Dance', cursive;
+	font-size: 70px;
+}
+footer p{
+	color: gray;
+}

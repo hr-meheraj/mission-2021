@@ -15,7 +15,7 @@ html{
 	scroll-behavior: smooth;
 }
 p{
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400 !important;
 }
 h1,h2,h3,h4{
@@ -25,7 +25,7 @@ a{
 	text-decoration: none;
 }
 img{
-	max-width: 100%;
+	max-width: 99%;
 }
 
 header nav{
@@ -57,7 +57,7 @@ nav .nav-links a{
 }
 .header-main{
 	display: flex;
-	width: 90%;
+	width: 95%;
 	justify-content: space-between;
 	align-items: center;
 	margin: 100px auto;
@@ -87,29 +87,24 @@ nav .nav-links a{
 .title{
 	padding-left: 10px;
 	font-size: 36px;
-	border-left: 4px solid;
-	border-radius:10px;
-	border-image:linear-gradient(70deg, red,blue) 10;
-	border-image-slice: 10;
+	border-left: 4px solid #002eff;
 
-}
 
-.title span{
-	color:orange;
 }
 
 .red-btn{
-	border-radius: 20px;
-	display: inline-block;
-	padding: 10px 25px;
-	background:red;
-	color:white;
-	margin: 10px 0px;
+	  border-radius: 11px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2e2dff;
+    color: white;
+    margin: 15px 0px
+;
 }
 
 /* Section two here */
 .mission{
-	width: 80%;
+	width: 95%;
 	margin: 0 auto;
 }
 .mission-title{
@@ -117,8 +112,10 @@ nav .nav-links a{
 	padding: 50px 0px;
 	font-size: 46px;
 }
-.mission-title span{
-	color:orange;
+span{
+	color: #002eff !important;
+	font-weight: 700;
+
 }
 .mission-elements{
 	display: flex;
@@ -147,27 +144,28 @@ nav .nav-links a{
 .vission{
 	background: linear-gradient(321deg, rgba(20,115,215,1) 0%, rgba(20,226,207,1) 100%);
 }
-.goals{
-
-}
 
 /* inner section */
 .inner-section-1{
 	display: flex;
-	justify-content: space-between;
-	width:80%;
+	justify-content: space-evenly;
+	width:95%;
+	align-items: center;
 	margin: 100px auto;
 
 }
 .inner-section-1 .content h1{
 	font-size: 32px;
 }
+.inner-section-1 img{
+	height:370px;
+}
 .inner-section-1 .content p{
-	font-size: 22px;
+	font-size: 18px;
 	margin:15px 0px;
 }
 .inner-section-1 .content .red-btn {
-	font-size: 22px;
+	font-size: 18px;
 }
 .inner-section-1 > div {
 	width: 45%;
@@ -190,7 +188,7 @@ footer p{
 }
 
 .app{
-	width: 80%;
+	width: 95%;
 	margin: 100px auto;
 	display: flex;
 	justify-content: space-between;
@@ -198,6 +196,13 @@ footer p{
 }
 .app .app-img{
 	width: 45%;
+	text-align: center;
+	height: 443px;
+}
+.app-img img{
+	height:535px;
+	padding: 20px 0px;
+	margin-bottom: 20px;
 }
 .app .app-content{
 	width: 45%;
@@ -208,9 +213,7 @@ footer p{
 	margin:70px 0px;
 	font-weight: 700;
 }
-.app-title span{
-	color:orange;
-}
+
 .app-btn{
 	padding: 10px 15px;
 	background:linear-gradient(132deg,rgb(2, 198, 212),rgb(0, 0, 236));
@@ -218,4 +221,23 @@ footer p{
 	border-radius: 10px;
 	display: inline-block;
 	margin-top: 15px;
+}
+
+@media screen and (max-width:600px){
+	
+	.mission,.header-main,.app , .inner-section-1, .mission-elements {
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	.header-main {
+		flex-direction: column-reverse;
+	}
+	.header-main > div,
+	.mission > div ,
+	.inner-section-1 > div, .mission-elements > div, .app > div{
+		width: 90%;
+		margin: 0 auto;
+	}
 }
